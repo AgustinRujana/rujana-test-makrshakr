@@ -7,7 +7,7 @@ import Hero from "@views/Hero.jsx";
 function App() {
   return (
     <>
-      <main className="bg-pink-50 min-h-screen">
+      <main className="bg-gray-900  bg-900 min-h-screen">
         <article className="max-w-6xl mx-auto p-8 sm:p-16">
           <Hero />
         </article>

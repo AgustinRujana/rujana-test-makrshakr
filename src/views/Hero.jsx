@@ -67,11 +67,11 @@ const Hero = () => {
           {items.map((e, i) => (
             <div
               key={i}
-              className="flex flex-col items-center justify-center w-full h-full min-h-96 minh sm:min-h-64 md:min-h-72 bg-pink-300 rounded-xl overflow-hidden shadow cursor-pointer transform transition-all hover:scale-105"
+              className="flex flex-col items-center justify-center w-full h-full min-h-96 minh sm:min-h-64 md:min-h-72 bg-pink-400 rounded overflow-hidden shadow cursor-pointer transform transition-all hover:scale-105"
               onClick={() => handleCardClick(i)}
             >
               <ImageLoader src={e.image} />
-              <div className="flex items-center p-6 h-18 w-full text-white font-thin tracking-tighter text-xl">
+              <div className="flex items-center p-6 h-18 w-full text-white font-thin tracking-tight text-xl">
                 <span className="truncate">{e.fact}</span>
                 <span>{"(" + e.length + ")"} </span>
               </div>
@@ -86,13 +86,13 @@ const Hero = () => {
 
   const Detail = () => {
     return (
-      <section className="grid grid-cols-5 h-full w-full rounded-xl overflow-hidden shadow">
+      <section className="grid grid-cols-5 h-full w-full rounded overflow-hidden shadow">
         <ImageLoader
-          className="col-span-2 h-full min-h-56 bg-pink-300"
+          className="col-span-2 h-full min-h-56 bg-pink-400"
           src={detail.image}
         />
 
-        <div className="col-span-3 flex flex-col p-4 bg-pink-300 text-white font-thin tracking-tighter text-xl">
+        <div className="col-span-3 flex flex-col p-4 bg-pink-400 text-white font-thin tracking-tighter text-xl">
           <div
             className="flex items-center justify-end gap-2"
             onClick={() => setDetail(null)}
@@ -114,10 +114,10 @@ const Hero = () => {
           <span className="bg-gradient-to-r from-pink-600 to-indigo-600 inline-block text-transparent bg-clip-text font-bold text-6xl sm:text-7xl">
             Cat Facts
           </span>
-          <span className="opacity-75 text-xs sm:text-sm">
+          <span className="opacity-75 text-xs sm:text-sm text-white font-thin">
             Do not tell my dogs I did this <b>#Dogs4thewin</b>
           </span>
-          <span className="opacity-75 text-xs sm:text-sm">
+          <span className="opacity-75 text-xs sm:text-sm text-white font-thin">
             Made with ❤️ by @AgustinRujana
           </span>
         </div>
